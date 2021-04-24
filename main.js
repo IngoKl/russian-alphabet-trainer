@@ -7,7 +7,8 @@ const RussianAlphabetApp = {
         score: '0',
         question: '',
         guess: '',
-        solution: ''
+        solution: '',
+        last_question: ''
       }
     },
     created() {
@@ -31,7 +32,14 @@ const RussianAlphabetApp = {
             if (this.guess == this.question['transl']) {
                 this.score++
                 localStorage.score = this.score
-                this.question = _.sample(this.questions)
+
+                this.last_question = this.question
+
+                // This ensures a 'new' question every time
+                while (this.last_question == this.question) {
+                    this.question = _.sample(this.questions)
+                }
+
                 this.guess = ''
                 this.solution = ''
             }
