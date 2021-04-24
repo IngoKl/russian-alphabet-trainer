@@ -17,6 +17,7 @@
             {"q": "М м", "transl": "m"},
             {"q": "Н н", "transl": "n"},
             {"q": "О о", "transl": "o"},
+            {"q": "П п", "transl": "p"},
             {"q": "Р р", "transl": "r"},
             {"q": "С с", "transl": "s"},
             {"q": "Т т", "transl": "t"},
@@ -36,7 +37,9 @@
         ],
         "words": [
             {"q": "Да", "transl": "da"},
-            {"q": "Нет", "transl": "nyet"}
+            {"q": "Нет", "transl": "nyet"},
+            {"q": "Привет", "transl": "privyet"},
+            {"q": "Спасибо", "transl": "spasibo"}
         ]
     }
 }
