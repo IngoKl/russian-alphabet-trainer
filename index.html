@@ -20,7 +20,7 @@
             <span class="question">{{ question['q'] }}</span>   
         </p>
         <p>
-            <input v-bind:class="current_class" placeholder="Your Guess" v-model="guess"/>
+            <input v-on:keyup.1="showSolution" v-bind:class="current_class" placeholder="Your Guess" v-model="guess"/>
         </p>
         <p>
             <button v-on:click="showSolution">Show Solution</button>
