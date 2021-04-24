@@ -21,11 +21,16 @@ const RussianAlphabetApp = {
                 this.question = _.sample(this.questions)
                 }
             )
+        
+        if (localStorage.score) {
+            this.score = localStorage.score;
+        }
     },
     watch: {
         guess: function() {
             if (this.guess == this.question['transl']) {
                 this.score++
+                localStorage.score = this.score
                 this.question = _.sample(this.questions)
                 this.guess = ''
                 this.solution = ''
