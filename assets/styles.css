@@ -18,7 +18,33 @@ button {
     border: none;
 }
 
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #2F4F4F;
+}
+
 .question {
     font-size: 1.6em;
     font-weight: bold;
+}
+
+.small {
+    font-size: 0.8em;
+}
+
+.set {
+    text-transform: capitalize;
+}
+
+@media (orientation: landscape) {
+    #app {
+        max-width: 50%;
+    }
+}
+
+@media (orientation: portrait) {
+    #app {
+        max-width: 80%;
+    }
 }

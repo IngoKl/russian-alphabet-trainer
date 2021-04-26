@@ -29,7 +29,7 @@ const RussianAlphabetApp = {
     },
     watch: {
         guess: function() {
-            if (this.guess == this.question['transl']) {
+            if (this.guess.toLowerCase() == this.question['transl'].toLowerCase()) {
                 this.score++
                 localStorage.score = this.score
 
