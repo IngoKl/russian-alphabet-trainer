@@ -1,46 +1,170 @@
 {
     "questions": {
         "characters": [
-            {"q": "А а", "transl": "a"},
-            {"q": "Б б", "transl": "b"},
-            {"q": "В в", "transl": "v"},
-            {"q": "Г г", "transl": "g"},
-            {"q": "Д д", "transl": "d"},
-            {"q": "Е е", "transl": "ye"},
-            {"q": "Ё ё", "transl": "yo"},
-            {"q": "Ж ж", "transl": "zh"},
-            {"q": "З з", "transl": "z"},
-            {"q": "И и", "transl": "i"},
-            {"q": "Й й", "transl": "y"},
-            {"q": "К к", "transl": "k"},
-            {"q": "Л л", "transl": "l"},
-            {"q": "М м", "transl": "m"},
-            {"q": "Н н", "transl": "n"},
-            {"q": "О о", "transl": "o"},
-            {"q": "П п", "transl": "p"},
-            {"q": "Р р", "transl": "r"},
-            {"q": "С с", "transl": "s"},
-            {"q": "Т т", "transl": "t"},
-            {"q": "У у", "transl": "u"},
-            {"q": "Ф ф", "transl": "f"},
-            {"q": "Х х", "transl": "kh"},
-            {"q": "Ц ц", "transl": "ts"},
-            {"q": "Ч ч", "transl": "ch"},
-            {"q": "Ш ш", "transl": "sh"},
-            {"q": "Щ щ", "transl": "sch"},
-            {"q": "Ъ ъ", "transl": "-"},
-            {"q": "Ы ы", "transl": "y"},
-            {"q": "Ь ь", "transl": "-"},
-            {"q": "Э э", "transl": "e"},
-            {"q": "Ю ю", "transl": "yu"},
-            {"q": "Я я", "transl": "ya"}
+            {
+                "q": "А а",
+                "transl": "a"
+            },
+            {
+                "q": "Б б",
+                "transl": "b"
+            },
+            {
+                "q": "В в",
+                "transl": "v"
+            },
+            {
+                "q": "Г г",
+                "transl": "g"
+            },
+            {
+                "q": "Д д",
+                "transl": "d"
+            },
+            {
+                "q": "Е е",
+                "transl": "ye"
+            },
+            {
+                "q": "Ё ё",
+                "transl": "yo"
+            },
+            {
+                "q": "Ж ж",
+                "transl": "zh"
+            },
+            {
+                "q": "З з",
+                "transl": "z"
+            },
+            {
+                "q": "И и",
+                "transl": "i"
+            },
+            {
+                "q": "Й й",
+                "transl": "y"
+            },
+            {
+                "q": "К к",
+                "transl": "k"
+            },
+            {
+                "q": "Л л",
+                "transl": "l"
+            },
+            {
+                "q": "М м",
+                "transl": "m"
+            },
+            {
+                "q": "Н н",
+                "transl": "n"
+            },
+            {
+                "q": "О о",
+                "transl": "o"
+            },
+            {
+                "q": "П п",
+                "transl": "p"
+            },
+            {
+                "q": "Р р",
+                "transl": "r"
+            },
+            {
+                "q": "С с",
+                "transl": "s"
+            },
+            {
+                "q": "Т т",
+                "transl": "t"
+            },
+            {
+                "q": "У у",
+                "transl": "u"
+            },
+            {
+                "q": "Ф ф",
+                "transl": "f"
+            },
+            {
+                "q": "Х х",
+                "transl": "kh"
+            },
+            {
+                "q": "Ц ц",
+                "transl": "ts"
+            },
+            {
+                "q": "Ч ч",
+                "transl": "ch"
+            },
+            {
+                "q": "Ш ш",
+                "transl": "sh"
+            },
+            {
+                "q": "Щ щ",
+                "transl": "sch"
+            },
+            {
+                "q": "Ъ ъ",
+                "transl": "-"
+            },
+            {
+                "q": "Ы ы",
+                "transl": "y"
+            },
+            {
+                "q": "Ь ь",
+                "transl": "-"
+            },
+            {
+                "q": "Э э",
+                "transl": "e"
+            },
+            {
+                "q": "Ю ю",
+                "transl": "yu"
+            },
+            {
+                "q": "Я я",
+                "transl": "ya"
+            }
         ],
         "words": [
-            {"q": "Да", "transl": "da"},
-            {"q": "Нет", "transl": "nyet"},
-            {"q": "Привет", "transl": "privyet"},
-            {"q": "Спасибо", "transl": "spasibo"},
-            {"q": "Шикарно", "transl": "shikarno"}
+            {
+                "q": "Да",
+                "transl": "da"
+            },
+            {
+                "q": "Нет",
+                "transl": "nyet"
+            },
+            {
+                "q": "Привет",
+                "transl": "privyet"
+            },
+            {
+                "q": "Спасибо",
+                "transl": "spasibo"
+            },
+            {
+                "q": "Шикарно",
+                "transl": "shikarno"
+            },
+            {
+                "q": "Кошка",
+                "trans": "koshka"
+            }
+        ],
+        "sentences": [
+            {
+                "q": "Я не говорю по-Русски",
+                "trans": "ya nye govoryu po-russki"
+            }
         ]
     }
 }
