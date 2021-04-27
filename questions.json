@@ -158,6 +158,10 @@
             {
                 "q": "Кошка",
                 "transl": "koshka"
+            },
+            {
+                "q": "белка",
+                "transl": "byelka"
             }
         ],
         "sentences": [
