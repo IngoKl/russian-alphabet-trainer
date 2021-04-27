@@ -52,7 +52,7 @@ if __name__ == "__main__":
 
     transliterated = transliterate(q)
 
-    questions['questions'][q_set].append({'q': q, 'trans': transliterated})
+    questions['questions'][q_set].append({'q': q, 'transl': transliterated})
 
     print(f'Adding {q} --> {transliterated} to questions.json')
 

@@ -157,13 +157,13 @@
             },
             {
                 "q": "Кошка",
-                "trans": "koshka"
+                "transl": "koshka"
             }
         ],
         "sentences": [
             {
                 "q": "Я не говорю по-Русски",
-                "trans": "ya nye govoryu po-russki"
+                "transl": "ya nye govoryu po-russki"
             }
         ]
     }
