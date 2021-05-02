@@ -8,7 +8,7 @@ Please note that the bundled transliterations (`questions.json`) are not very so
 
 Also, but this is quite obvious; from an educational standpoint, this is quite horrible. I just needed something like this and wasn't able to find an easy enough solution.
 
-![Demo](demo/demo1.gif?raw=true =250x)
+<img alt="Demo" src="demo/demo1.gif?raw=true" height="300">
 
 ## Usage
 
