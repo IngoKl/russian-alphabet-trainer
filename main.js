@@ -8,7 +8,8 @@ const RussianAlphabetApp = {
         question: '',
         guess: '',
         solution: '',
-        last_question: ''
+        last_question: '',
+        theme: ''
       }
     },
     created() {
@@ -25,6 +26,20 @@ const RussianAlphabetApp = {
         
         if (localStorage.score) {
             this.score = localStorage.score;
+        }
+
+        console.log(window.matchMedia('(prefers-color-scheme: dark)'));
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            this.theme = 'darkMode'
+            document.documentElement.setAttribute('data-theme', this.theme);
+        } else {
+            this.theme = 'lightMode'
+            document.documentElement.setAttribute('data-theme', this.theme);
+        }
+
+        if (localStorage.theme) {
+            this.theme = localStorage.theme;
+            document.documentElement.setAttribute('data-theme', this.theme);
         }
     },
     watch: {
@@ -52,7 +67,12 @@ const RussianAlphabetApp = {
         changeSet: function (event) {
             this.questions = this.questions_pool[event.target.id]
             this.question = _.sample(this.questions) 
-        }
+        },
+        changeTheme: function() {
+            this.theme = this.theme == 'darkMode' ? 'lightMode' : 'darkMode';
+            localStorage.theme = this.theme;
+            document.documentElement.setAttribute('data-theme', this.theme);
+        },
       }
   }
   

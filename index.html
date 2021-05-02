@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Russian Alphabet Trainer</title>
-      <link rel="stylesheet" href="./assets/styles.css"/>
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-      
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous"></script>
-      <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
-   </head>
-   <body>
-      <div id="app">
-         <h1>Russian Alphabet Trainer</h1>
-         <p>
-            <span><strong>Score</strong>: {{ score }}</span>
-         </p>
-        <p>
-            <span class="question">{{ question['q'] }}</span>   
-        </p>
-        <p>
-            <input v-on:keyup.1="showSolution" placeholder="Your Guess" v-model="guess"/>
-        </p>
-        <p>
-            <button v-on:click="showSolution">Show Solution</button>
-            <span>&nbsp;<em>{{ solution }}</em></span>
-        </p>
-        <p class="small">
-           While typing your answer, you can always press <em>1</em> to reveal the answer. 
-           You also do not have to think about capitalization when making your guess.
-        </p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Russian Alphabet Trainer</title>
+        <link rel="stylesheet" href="./assets/styles.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 
-        <hr>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <h1>Russian Alphabet Trainer</h1>
 
-        <p>
-           <em>Available Question Sets</em>
-        </p>
-        <p>
-           <button class="set" v-for="item of question_sets" v-bind:id="item" v-on:click="changeSet">{{ item }}</button>
-        </p>
+            <p>
+                <span><strong>Score</strong>: {{ score }}</span>
+            </p>
+            <p>
+                <span class="question">{{ question['q'] }}</span>
+            </p>
+            <p>
+                <input v-on:keyup.1="showSolution" placeholder="Your Guess" v-model="guess" />
+            </p>
+            <p>
+                <button v-on:click="showSolution">Show Solution</button>
+                <span>&nbsp;<em>{{ solution }}</em></span>
+            </p>
+            <p class="small">While typing your answer, you can always press <em>1</em> to reveal the answer. You also do not have to think about capitalization when making your guess.</p>
 
-      </div>
-      
-      <script src="./main.js"></script>
-   </body>
+            <hr />
+
+            <p>
+                <em>Available Question Sets</em>
+            </p>
+            <p>
+                <button class="set" v-for="item of question_sets" v-bind:id="item" v-on:click="changeSet">{{ item }}</button>
+            </p>
+
+            <hr />
+
+            <p>
+                <button v-on:click="changeTheme">Theme</button>
+            </p>
+        </div>
+
+        <script src="./main.js"></script>
+    </body>
 </html>

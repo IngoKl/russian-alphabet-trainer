@@ -2,11 +2,13 @@
 
 This is an incredibly basic [Vue.js](https://vuejs.org/) app for training transliterating the Russian alphabet into the Latin one.
 
-Under the hood, this is nothing more than a Q/A system that 'awards' you a point for each question you answered correctly. 
+Under the hood, this is nothing more than a Q/A system that 'awards' you a point for each question you answered correctly.
 
 Please note that the bundled transliterations (`questions.json`) are not very sophisticated.
 
 Also, but this is quite obvious; from an educational standpoint, this is quite horrible. I just needed something like this and wasn't able to find an easy enough solution.
+
+![Demo](demo/demo1.gif?raw=true "Demo")
 
 ## Usage
 
@@ -29,3 +31,5 @@ npm install --global http-server
 git clone https://github.com/IngoKl/russian-alphabet-trainer
 http-server
 ```
+
+Of course, given the very simple structure of this tool, you can easily modify this into something else. Basically, you can use this to train (well, drill) anything that is question and answer based.
